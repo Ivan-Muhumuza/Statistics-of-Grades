@@ -1,7 +1,17 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        String input = "2 20 21 22 23 30 48 49 50 55 60 65 72 63 76 80 68 90 85 98";
+        Scanner scanner = new Scanner(System.in);
+
+        /* prompting user for grades  */
+        System.out.println("Enter the grades separated by spaces:");
+
+        // String input = "2 20 21 22 23 30 48 49 50 55 60 65 72 63 76 80 68 90 85 98";
+        String input = scanner.nextLine();
+        scanner.close();  // close the scanner
+
 
         int[] scores = convertStringToIntArray(input);
         int[] stats = gradeStats(scores);
