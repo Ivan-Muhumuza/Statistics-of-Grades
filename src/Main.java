@@ -106,7 +106,7 @@ public class Main {
 
         for (int i = 6; i > 0; i--) {
             System.out.print("   " + i + " > ");      // loop against descending values to create vertical units
-            for (int j = 0; j < stats.length; j++) {  // recursive loop to gauge stats against vertical scale
+            for (int j = 0; j < stats.length; j++) {  // nested for loop to gauge stats against vertical scale
                 if (stats[j] >= i) {                  //
                     System.out.print("  ####### ");   // if exists print hashes else print spaces
                 } else {
